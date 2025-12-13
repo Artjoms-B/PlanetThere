@@ -1,0 +1,278 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.Header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--background-color);
+}
+.logo-section {
+	display: flex;
+	flex-direction: row;
+	width: 364px;
+}
+.logo {
+	width: 142px;
+	height: 144px;
+}
+.LogoText {
+	font-family: 'Product Sans', sans-serif;
+	font-size: 39px;
+	font-weight: bold;
+	text-decoration: none;
+	align-self: center;
+}
+
+.LogoTextP1 {
+	color: var(--foreground-color);
+}
+
+.LogoTextP2 {
+	color: rgb(0, 150, 136);
+}
+
+ul {
+	list-style: none;
+}
+
+.navigation-section {
+	display: flex;
+	margin-right: 50px;
+}
+
+.navig-links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	justify-content: space-between;
+	gap: 5px;
+	margin-top: 2px;
+}
+
+.navig-links li {
+	min-width: 131px;
+	padding: 15px 34px 15px 34px;
+}
+
+.nav-link {
+	font-family: 'Product Sans', sans-serif;
+	size: 14px;
+	color: var(--foreground-color);
+	text-decoration: none;
+}
+
+.selected-link {
+	color: white;
+	background-color: rgb(0, 150, 136);
+	border-radius: 5px;
+}
+
+.selected-link a {
+	color: white;
+}
+
+.Join-us-section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url('../images/signup.jpg');
+	background-size: cover;
+	width: 600px;
+	align-items: center;
+	background-blend-mode: overlay;
+	order: 1;
+}
+.Join-us-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay color */
+	pointer-events: none; /* Allows clicks through the overlay */
+}
+
+.join-us-section-text {
+	display: flex;
+	flex-direction: column;
+	gap: 73px;
+	text-align: center;
+	z-index: 999;
+}
+
+.join-us-today {
+	font-family: 'Product Sans', sans-serif;
+	font-size: 42px;
+	font-weight: bold;
+	color: white;
+}
+
+.Join-us-section p {
+	font-family: 'Product Sans', sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	color: white;
+}
+
+fieldset {
+	border: none;
+}
+
+input {
+	font-family: 'Product Sans', sans-serif;
+	font-size: 14px;
+	padding: 17px 7px 17px 7px;
+	border-radius: 10px;
+	border: none;
+	/*box-shadow: 2px 5px 10px rgba(199, 199, 199);*/
+	background-color: var(--form-color);
+	color: var(--text-color);
+}
+
+::placeholder{
+	color: var(--text-color);
+}
+
+.registration-section {
+	flex: 1;
+	background-color: var(--background-color);
+	padding-bottom: 41px;
+	order: 2;
+}
+
+.registration-form {
+	display: grid;
+	grid-template-columns: 322px 322px;
+	margin-top: 50px;
+	justify-content: center;
+	justify-items: stretch;
+	grid-row-gap: 40px;
+	grid-column-gap: 30px;
+}
+
+.Password-field,
+.Confirm-password-field,
+.Username-field,
+.Email-field {
+	grid-column: 1/3;
+	display: flex;
+	flex-direction: column;
+
+	gap: 18px;
+}
+
+.legend-section {
+	grid-column: 1/3;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-bottom: 50px;
+}
+.legend {
+	font-family: 'Product Sans', sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+}
+
+.legend-subtext {
+	color: var(--gray-text-color);
+	font-family: 'Product Sans', sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+.sign-up-button {
+	font-family: 'Product Sans', sans-serif;
+	font-size: 16px;
+	width: 286px;
+	height: 44px;
+	grid-column: 1/3;
+	color: white;
+	background-color: rgb(0, 150, 136);
+	border: none;
+	border-radius: 5px;
+	justify-self: center;
+	transition: background-color 0.5s;
+	margin-top: 100px;
+}
+
+.sign-up-button:hover {
+	background-color: rgba(0, 150, 136, 0.7);
+	cursor: pointer;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+.form-label {
+	font-family: 'Product Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.name-label {
+	text-transform: uppercase;
+}
+
+.footer-part {
+	font-family: 'Product Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.footer-part a {
+	color: #00a9b5;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+	input {
+		width: 90%;
+	}
+	.Join-us-section {
+		display: none;
+	}
+	.form-label {
+		width: 90%;
+	}
+	.nav-bar {
+		width: 100%;
+	}
+	.registration-section {
+		width: 100%;
+	}
+
+	.registration-form {
+		grid-template-columns: 45% 45%;
+	}
+	.Email-field,
+	.Username-field,
+	.Password-field,
+	.Confirm-password-field {
+		width: 100%;
+		justify-content: center; /* Centers horizontally */
+		align-items: center; /* Centers vertically */
+	}
+
+	.registration-form {
+		width: 100%;
+	}
+
+	.sign-up-button {
+		margin-top: 50px;
+	}
+}

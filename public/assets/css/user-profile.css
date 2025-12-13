@@ -1,0 +1,341 @@
+/* user-profile.css */
+
+/*Container for the background color*/
+.content-container {
+	width: 100%;
+	background-color: var(--background-color);
+	min-height: 75vh;
+}
+
+/* Profile Section */
+
+/* Header to store the elements of the profile section */
+.combined-header {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	gap: 40px; /* Ensure spacing between the profile content and actions */
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+	width: 90%;
+	justify-self: start;
+	align-self: start;
+	/*padding-left: 20px;*/
+	padding-top: 20px;
+}
+
+/* Profile Header */
+.profile-header {
+	display: flex;
+	align-items: flex-start; /* Align image and text to the start */
+	gap: 20px;
+	width: 100%;
+	justify-content: space-around;
+}
+
+/* Profile Image */
+.profile-header img {
+	align-self: center;
+	aspect-ratio: 1 / 1;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 3px solid var(--primary-color);
+	object-fit: cover;
+}
+
+/* Profile Text (Name, Email, Phone) */
+.profile-text {
+	display: flex;
+	align-self: flex-end;
+	flex-direction: column;
+	/*margin-top: 20px;*/
+	gap: 8px;
+}
+
+
+.dob {
+	color: var(--primary-color);
+	margin: 0;
+}
+
+.profile-header h1 {
+	font-size: 2em;
+	color: var(--text-color);
+	margin-top: 0;
+	margin-bottom: 1px;
+}
+
+.profile-header .name {
+	font-size: 1.7em;
+	color: var(--text-color);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.profile-header .email,
+.profile-header .phone-number {
+	font-size: 1.5em;
+	color: #777;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+/* Profile Actions (Follow, Block buttons) */
+.profile-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 15px; /* Provide space between buttons */
+}
+
+.follow-btn,
+.block-btn {
+	margin-top: 20px;
+	margin-right: 30px;
+	padding: 15px;
+	width: 20vw;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 0.9em;
+	color: #fff;
+}
+
+.follow-btn {
+	background-color: var(--primary-color);
+	transition: background-color 0.3s ease-in-out;
+	cursor: grab;
+}
+
+
+.block-btn {
+	background-color: #d32f2f;
+	cursor: grab;
+}
+
+
+/* Styles for screens smaller than 900px */
+@media (max-width: 900px) {
+
+	.profile-text {
+		gap: 4px;
+	}
+	.profile-header img{
+		width: 150px;
+		height: 150px;
+	}
+
+	.profile-header h1 {
+		font-size: 1.7em;
+	}
+
+	.profile-header .name {
+		font-size: 1.5em;
+		color: #333;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.profile-header .email,
+	.profile-header .phone-number {
+		font-size: 1.3em;
+		color: #777;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.block-btn, .follow-btn {
+		margin-right: 10px;
+	}
+}
+
+
+@media (max-width: 700px){
+	.profile-header {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.combined-header {
+		margin: 20px 0;
+		width: 100%;
+	}
+
+	.profile-actions {
+		align-self: end;
+		flex-direction: row;
+	}
+
+	.block-btn, .follow-btn {
+		margin: 0;
+		width: 30vw;
+	}
+}
+
+@media (max-width: 550px){
+	.profile-header {
+		width: 100%;
+	}
+
+	.profile-text {
+		gap: 2px;
+	}
+	.profile-header img{
+		width: 100px;
+		height: 100px;
+	}
+
+	.profile-header h1 {
+		font-size: 1.3em;
+	}
+
+	.profile-header .name {
+		font-size: 1.1em;
+		color: #333;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.profile-header .email,
+	.profile-header .phone-number {
+		font-size: 0.9em;
+	}
+
+}
+
+/*Events Section*/
+
+.events-section {
+	width: 88%;
+	margin-top: 5px;
+	/*padding: 0 20px;*/
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+}
+
+.section-title {
+	margin-left: 20px;
+	color: var(--text-color);
+	font: 400 2em 'Product Sans', sans-serif;
+	font-weight: bold;
+}
+
+.section-title .highlight {
+	color: var(--primary-color);
+}
+
+.events-container {
+	margin-top: 10px;
+}
+
+.events-grid {
+	width: inherit;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Add a responsive layout for smaller screens */
+@media (max-width: 1200px) {
+	.events-grid {
+		grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+	}
+}
+
+@media (max-width: 900px) {
+	.events-grid {
+		grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+	}
+}
+
+@media (max-width: 600px) {
+	.events-grid {
+		grid-template-columns: 1fr; /* 1 column on very small screens */
+	}
+}
+
+/* Event Card */
+.event-card {
+	border-radius: 10px;
+	background-color: var(--foreground-color);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 20px;
+	width: 88%;
+	height: 88%;
+}
+
+.event-image {
+	aspect-ratio: 1.45;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 8px 8px 0 0;
+}
+
+.event-title {
+	color: var(--text-color);
+	margin-top: 15px;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.event-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: auto;
+}
+
+.event-info {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.8em;
+}
+
+.event-date {
+	color: var(--primary-color);
+}
+
+.event-location {
+	color: var(--gray-text-color);
+	margin-top: 4px;
+}
+
+/* Event attendance styling */
+.event-attendance {
+	display: flex;
+	align-items: center;
+	color: var(--gray-text-color);
+	font-size: 0.9em;
+}
+
+.attendance-icon {
+	width: 24px;
+	margin-right: 8px;
+}
+
+.load-more-btn {
+	margin: 20px auto;
+	margin-top: 30px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--primary-color);
+	color: white;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.load-more-btn:hover {
+	background-color: #00796b;
+}

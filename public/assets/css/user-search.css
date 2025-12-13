@@ -1,0 +1,124 @@
+.user-search-page {
+	text-align: center;
+	background: var(--background-color);
+	min-height: 85vh;
+}
+
+.search-bar-container {
+	background-color: #333; /* Black background */
+	padding: 20px 0; /* Add spacing above and below the search bar */
+	margin-bottom: 20px;
+}
+
+.search-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: var(--footer-background-color);
+	border-radius: 30px;
+	padding: 5px 15px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+	border: none;
+	outline: none;
+	flex: 1;
+	font-size: 1rem;
+	padding: 8px;
+	border-radius: 30px;
+}
+
+.search-bar button {
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: 50%;
+	padding: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-bar button img {
+	width: 20px;
+	height: 20px;
+}
+
+.user-profiles {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	padding: 20px 40px;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.profile-card {
+	background: var(--foreground-color);
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	width: 180px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	margin-bottom: 10px;
+	border: 3px solid var(--primary-color);
+}
+
+.profile-card h2 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+.profile-card p {
+	font-size: 0.9rem;
+	color: #666;
+	margin: 5px 0 15px;
+}
+
+.load-more-container {
+	padding: 20px 0;
+}
+
+.load-more-btn {
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1rem;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.load-more-btn:hover {
+	background-color: #00796b;
+}
+
+@media screen and (max-width: 780px) {
+	.user-profiles {
+		padding: 20px;
+		align-self: center;
+	}
+	.profile-card {
+		justify-self: center;
+		width: 250px;
+	}
+
+	.user-profiles {
+		align-self: center;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	}
+}
