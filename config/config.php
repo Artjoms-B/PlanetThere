@@ -10,7 +10,7 @@
         ],
         'app' => [
             'name' => 'PlanetThere',
-            'base_url' => 'http://localhost/PlanetThere/',
+            'base_url' => 'http://localhost/',
             'debug' => true
         ]
     ];

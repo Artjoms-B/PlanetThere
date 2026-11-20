@@ -8,8 +8,9 @@
         </section>
         <div class="paragraph-section">
             <p>
-                My name is <span class="highlight">Artjoms Bašuns</span>, I am a Transport and Telecommunication Institute student. 
-                This is my prodject for the Web Development course. My purpose in creating 
+                Our names are <span class="highlight">Artjoms Bašuns</span>, <span class="highlight">Arturs Kruze</span> and
+                <span class="highlight">Pablo Aleksanders Kriado-Isačenoks</span>. We are a Transport and Telecommunication Institute students. 
+                This is our prodject for the Group Project course. Our purpose in creating 
                 <b>Planet</b><span class="highlight">There</span> is to revolutionize the way people 
                 discover and manage events, ensuring that everyone can access their favorite experiences 
                 with ease.
@@ -25,7 +26,7 @@
             </div>
             <div class="overview-item">
                 <h3>FOUNDED</h3>
-                <h2>2025</h2>
+                <h2>2026</h2>
                 <p>Right before the deadline</p>
             </div>
             <div class="overview-item">

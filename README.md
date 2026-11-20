@@ -110,7 +110,7 @@ PlanetThere is a platform built using HTML, CSS, JavaScript, PHP and a MySQL dat
 5. Configure the project:
    - Edit the `config` files with your database credentials if needed.
 6. Launch the application:
-   - Open the project in your browser using `http://planetthere.local/`.
+   - Open the project in your browser using `http://localhost/`.
    - DB `http://localhost/phpmyadmin/`
 
 ---

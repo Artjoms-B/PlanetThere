@@ -37,7 +37,7 @@
 
         <div class="footer-copy">
             <p class="copyright">Geocoding data © OpenStreetMap contributors (Nominatim)</p>
-            <p class="copyright">Non Copyrighted © 2025 by Artjoms B.</p>
+            <p class="copyright">Non Copyrighted © 2026 by Artjoms B., Arturs K., Pablo Aleksanders K.-I.</p>
         </div>
     </div>
 

@@ -114,3 +114,7 @@ updateSettings called for user 21
 updateSettings called for user 24
 updateSettings called for user 25
 updateSettings called for user 27
+updateSettings called for user 18
+updateSettings called for user 19
+updateSettings called for user 19
+updateSettings called for user 32
